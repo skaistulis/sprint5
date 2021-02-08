@@ -37,4 +37,6 @@ You can now access the server at http://localhost:8000/sprint5
     php artisan migrate
     php artisan serve
 
+![Screenshot](emp.PNG)
 
+![Screenshot](pro.PNG)
