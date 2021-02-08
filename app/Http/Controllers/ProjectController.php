@@ -14,9 +14,6 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        // $projects = Project::all();
-        // return view('projects', ['project' => $projects]);
-
         $projects = Project::all();
         return view('projects', ['projects' => $projects]);
     }
@@ -38,14 +35,11 @@ class ProjectController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        
+    { 
         $request->validate([
             'project_name'=> 'required'
         ]);
-
         Project::create($request->all());
-
         return redirect()->route('projects.index')->with('success', 'Project created successfully');
     }
 
@@ -55,10 +49,7 @@ class ProjectController extends Controller
      * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(Project $project)
-    {
-        //
-    }
+    public function show(Project $project){}
 
     /**
      * Show the form for editing the specified resource.
@@ -83,11 +74,8 @@ class ProjectController extends Controller
         $request->validate([
             'project_name'=> 'required'
         ]);
-
         $project->update($request->all());
-
         return redirect()->route('projects.index')->with('success', 'Project updated successfully');
-        
     }
 
     /**
@@ -100,6 +88,5 @@ class ProjectController extends Controller
     {
         $project->delete();
         return redirect()->route('projects.index')->with('success', 'Project deleted successfully');
-
     }
 }

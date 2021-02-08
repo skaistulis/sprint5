@@ -1,7 +1,5 @@
 @extends('welcome')
-
 @section('content')
-
 <div>
     <div class="project-create-custom">
         <div>
@@ -22,7 +20,6 @@
         </ul>
     </div>
 @endif
-
 <form class="project-create-form" action="{{route('projects.store')}}" method="POST">
     @csrf
     <div class="form-group">
@@ -33,6 +30,4 @@
         <button class="btn btn-primary" type="submit">Create</button>
     </div>
 </form>
-
-
 @endsection

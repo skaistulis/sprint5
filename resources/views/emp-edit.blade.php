@@ -1,6 +1,5 @@
 @extends('welcome')
 @section('content')
-
 <div>
     <div class="project-create-custom">
         <div>
@@ -21,7 +20,6 @@
         </ul>
     </div>
 @endif
-
 <form class="project-create-form" action="{{route('employees.update', $employee->id)}}" method="POST">
     @csrf
     @method('PUT')
@@ -40,10 +38,5 @@
     <div>
         <button class="btn btn-primary" type="submit">Edit</button>
     </div>
-
-
 </form>
-
-
-
 @endsection

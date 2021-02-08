@@ -32,7 +32,6 @@ class SetupOneToManyProjectToEmployees extends Migration
         Schema::table('employees', function (Blueprint $table) {
             $table->dropForeign(['project_id']);
             $table->dropColumn('project_id');
-            
         });
     }
 }

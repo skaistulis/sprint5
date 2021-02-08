@@ -1,7 +1,5 @@
 @extends('welcome')
-
 @section('content')
-
 <div>
     <div class="projects-custom">
         <div>

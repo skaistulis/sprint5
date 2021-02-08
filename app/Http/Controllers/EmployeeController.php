@@ -41,9 +41,7 @@ class EmployeeController extends Controller
         $request->validate([
             'employee_name'=> 'required'
         ]);
-
         Employee::create($request->all());
-
         return redirect()->route('employees.index')->with('success', 'Employee added successfully');
     }
 
@@ -53,10 +51,7 @@ class EmployeeController extends Controller
      * @param  \App\Models\Employee  $employee
      * @return \Illuminate\Http\Response
      */
-    public function show(Employee $employee)
-    {
-        //
-    }
+    public function show(Employee $employee) {}
 
     /**
      * Show the form for editing the specified resource.
@@ -78,16 +73,11 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, Employee $employee)
     {
-
         $request->validate([
             'employee_name'=> 'required'
-            
         ]);
-
-
         $employee->update($request->all());
         return redirect()->route('employees.index')->with('success', 'Employee updated successfully');
-        
     }
 
     /**

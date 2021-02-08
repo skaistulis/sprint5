@@ -11,7 +11,7 @@ class Employee extends Model
     protected $fillable = [
         'employee_name'
     ];
-
+    
     public function project() {
         return $this->belongsTo('App\Models\Project');
     }

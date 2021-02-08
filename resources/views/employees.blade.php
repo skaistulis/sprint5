@@ -1,5 +1,4 @@
 @extends('welcome')
-
 @section('content')
 <div>
     <div class="projects-custom">
@@ -33,8 +32,6 @@
         @else
         <td>{{$employee->project->project_name}}</td> 
         @endif
-
-
         <td class="last-td-custom">
             <form action="{{route('employees.destroy', $employee->id)}}" method="POST">
                 <a class="btn btn-primary" href="{{route('employees.edit', $employee->id)}}">Edit</a>
