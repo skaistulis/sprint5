@@ -1,3 +1,5 @@
+# CRUD app made with Laravel
+
 ## Installation
 
 Please check the [official laravel installation](https://laravel.com/docs/8.x/installation) guide for server requirements before you start.
