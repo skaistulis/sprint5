@@ -9,7 +9,6 @@
 <body>
     @include('header')
     @yield('content')
-    {{-- <h2 class="welcome">Welcome! Please choose Employees or Projects section</h2> --}}
     @include('footer')
 </body>
 <style>

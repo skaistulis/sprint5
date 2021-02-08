@@ -27,7 +27,6 @@
       <label for="employee_name">Project Name</label>
       <input type="text" class="form-control" id="employee_name" name="employee_name" value="{{$employee->employee_name}}">
     </div>
-    
     <label for="project_id">Choose the project:</label>
     <select id="project_id" name="project_id">
         <option value='' disabled selected style='display:none;'>Projects:</option>
